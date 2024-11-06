@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    background: #D4C9AE;
+}
+
+header,
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DFBA69;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7rem;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a {
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+header a:hover {
+    color: #423c3c;
+}
+
+header button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    background: #6d4229;
+    color: #fff;
+    margin: 0.5rem;
+    cursor: pointer;
+
+}
+
+header button:hover {
+    background: #4e2208;
+}
+
+header .logo {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 26rem; /* Espaço entre a logo e os elementos ao lado */
+}
+
+
+
+.logo {
+    width: 15rem;
+    height: 5rem;
+    
+}
+
+.instagram,
+.facebook {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    
+
+}
+
+.facebook {
+    margin-left: 18rem;
+}
+
+/* main*/
+.conteudo,
+.conteudo article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo {
+    position: relative;
+    width: 100%;
+}
+
+.conteudo article {
+    text-align: center;
+    position: absolute;
+    color: #fff;
+}
+
+.conteudo h1 {
+    font-size: 5rem;
+}
+
+.conteudo h4 {
+    font-size: 1.5rem;
+}
+
+/* Produtos */
+.produtos,
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin: 3rem;
+    width: 100%;
+    height: 5.6rem;  
+    font-size: 3rem;
+    background: #F2E1BD;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
+    color: #4e2208;
+
+}
+
+.conteiner-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.card,
+.card article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 16rem;
+    background: #F2E1BD;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card article {
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 1rem;
+    width: 12rem;
+    height: 12rem;
+    cursor: pointer;
+    transition: transform 1s;
+    margin-top: 1rem;
+}
+
+.card img:hover {
+    transform: translateX(1px) scale(1.1);
+}
+
+.card h1 {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte para que o texto não quebre */
+    color: #4e2208;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que o título quebre em uma nova linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    margin: 0.5rem 0; /* Adiciona um espaçamento entre o título e os outros elementos */
+}
+
+.card {
+    padding: 1rem; /* Adiciona um padding para evitar que o texto fique muito colado na borda */
+}
+
+.card p {
+    margin: 0.5rem 1rem; /* Ajusta a margem para uniformizar o espaçamento */
+
+}
+
+.card button {
+    background-color: #4e2208; /* cor do botão */
+    color: #fff; /* cor do texto */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #B26C44; /* cor ao passar o mouse */
+}
+
+.card button {
+    display: block;
+    width: 70%; /* Deixa o botão com largura total dentro do card, se preferir */
+    text-align: center;
+    margin-top: 1rem; /* Espaçamento entre o conteúdo do card e o botão */
+}
+
+/*sobre*/
+.sobre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 2rem;
+    margin: 2rem;
+    color: #4e2208;
+
+}
+
+.sobre img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1.5rem; /* Espaço entre a imagem e o texto */
+    flex-shrink: 0; /* Garante que a imagem não seja redimensionada */
+}
+
+.sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.sobre p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+
+.conteudo-sobre {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e o texto no topo */
+}
+
+.conteudo-sobre img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1.5rem; /* Espaço entre a imagem e o texto */
+    flex-shrink: 0; /* Garante que a imagem não seja redimensionada */
+}
+
+.texto-sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.texto-sobre p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+/*linha*/
+.linha{ 
+    background: #7D693C;
+    width: 100%;
+    height: 40px;
+}
+/*Avaliação*/
+
+.avaliacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4e2208;
+
+}
+.avaliacao h1{
+    font-size: 3rem;
+    
+}
+
+.avaliacao img {
+    
+    height: 300px;
+}
+.avaliacao h2,.avaliacao h4{
+    width: 25rem;
+    
+}
+
+.avaliacao h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.conteiner-avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-avaliacao section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+/*Contato*/    
+.contatos{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+.titulo-contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    width: 100%;
+    height: 5.6rem;  
+    font-size: 3rem;
+    background: #F2E1BD;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
+    color: #4e2208;
+}
+.contatos section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50rem;
+    text-align: center;
+    height: 15rem;
+    color: #4e2208;
+
+}
+.contatos img {
+    width: 20rem;
+}
+.contatos article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.contatos h1{
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.contatos h4{
+    font-size: 1.5rem;
+
+}
+/*footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    background: #DFBA69;
+    height: 20rem;
+}
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: 70rem;
+}
+footer section nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    margin: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #423c3c;
+}
+
+
+footer button:hover {
+    background: #4e2208;
+}
+footer img{ 
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    margin-right: 30rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1rem;
+}
+

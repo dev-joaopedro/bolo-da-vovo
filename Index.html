@@ -17,10 +17,12 @@
                 <li><a href="#linksobre">Sobre nós</a></li>
                 <li><a href="#linkcontato">Contato</a></li>
             </ul>
-            <button>Fazer encomenda</button>
-            <button>Seja um Netinho</button>
-            <img src="imagens/facebook.png" alt="facebook" class="facebook">
-            <img src="imagens/instagram.png"alt="instagram" class="instagram">
+
+            <section>
+                <button>Fazer encomenda</button>
+                <button>Seja um Netinho</button>
+            </section>
+
         </nav>
     </header>
     <main>
@@ -178,36 +180,60 @@
             </section>
         </section>
         <section class="linha"></section>
-        <section id="linkcontato" class="contatos">
-            <h1 class="titulo-contatos">Contatos</h1>
-            <section>
+        <section class="contatos">
+            <h1 class="titulo-contatos">Contato</h1>
+            <section class="info-contato">
                 <article>
-                    <img src="imagens/logopng.png" alt="">
-                    <h4>Telefone: (35)94002-8922 <br>E-mail: docesdavovo@gmail.com</h4>
+                    <img src="imagens/logopng.png" alt="Logo da Vovó">
+                    <h4>Telefone: (35) 94002-8922<br>E-mail: docesdavovo@gmail.com</h4>
                 </article>
                 <h4>
-                    Estamos sempre à disposição para atendê-lo! Entre em contato conosco para encomendas personalizadas,
-                    dúvidas ou sugestões.
+                    Estamos sempre à disposição para atendê-lo! Entre em contato conosco para encomendas personalizadas, dúvidas ou sugestões.
                 </h4>
+            </section>  
+        
+            <!-- Formulário de Contato -->
+            <section class="formulario-contato">
+                <h3>Se tiver alguma dúvida, deixe seu nome e telefone para que possamos entrar em contato:</h3>
+                <form class="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="campo-nome" placeholder="Seu nome completo" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" class="campo-telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    
+                    <button type="submit" class="botao-enviar">Enviar</button>
+                </form>
             </section>
+        </section>
         </section>
     </main>
     <section class="linha"></section>
 
     <footer>
-        <section>
-            <img src="imagens/logo atualizada.png" alt="bolo da vovo">
-            <nav class="action">
+        <section class="rodape">
+            <figure class="logo-rodape">
+                <img src="imagens/logo atualizada.png" alt="bolo da vovo">
+            </figure>
+
+            <nav class="nav-rodape">
                 <ul>
-                    <li><a href="#linkcardapio">Cardapio</a></li>
-                    <li><a href="#linksobre">Sobre nós</a></li>
-                    <li><a href="#linkcontato">Contato</a></li>
+                    <a href="#linkcardapio">Cardapio</a>
+                    <a href="#linksobre">Sobre nós</a>
+                    <a href="#linkcontato">Contato</a>
                 </ul>
+            </nav>
+
+            <section class="rede-social">
                 <img src="imagens/facebook.png" alt="facebook" class="facebook">
                 <img src="imagens/instagram.png" alt="instagram" class="instagram">
-            </nav>
+            </section>
         </section>
-        <h1>₢ Direitos reservados</h1>
+
+        <section class="direitos">
+            <h1>₢ Direitos reservados</h1>
+        </section>
+        
     </footer>
 </body>
 <script>

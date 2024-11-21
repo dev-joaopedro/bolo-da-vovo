@@ -6,22 +6,31 @@
 }
 
 body {
+
     background: #D4C9AE;
 }
 
-header,
-nav {
+header,header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: auto;
     background: #DFBA69;
 }
 
+
 header ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 7rem;
+    gap: 40px;
+    justify-content: center;
+    width: 50%;
+    margin-left: 10rem;
+}
+
+header nav{
+    margin: 0.5rem;
 }
 
 header li {
@@ -29,7 +38,6 @@ header li {
 }
 
 header a {
-    margin: 1rem;
     text-decoration: none;
     font-size: 24px;
     color: #fff;
@@ -47,7 +55,7 @@ header button {
     color: #fff;
     margin: 0.5rem;
     cursor: pointer;
-
+    margin-right: 0; /* Isso alinha a logo à esquerda */
 }
 
 header button:hover {
@@ -56,11 +64,9 @@ header button:hover {
 
 header .logo {
     max-width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-right: 26rem; /* Espaço entre a logo e os elementos ao lado */
+    height: auto; 
+    margin-left: 0; /* Isso alinha a logo à esquerda */
 }
-
-
 
 .logo {
     width: 15rem;
@@ -76,10 +82,6 @@ header .logo {
     cursor: pointer;
     
 
-}
-
-.facebook {
-    margin-left: 18rem;
 }
 
 /* main*/
@@ -157,9 +159,12 @@ header .logo {
 }
 
 .card img {
+    width: 100%;
+    height: auto;
+    max-width: 12rem;
+    max-height: 12rem;
     border-radius: 1rem;
-    width: 12rem;
-    height: 12rem;
+    object-fit: cover;
     cursor: pointer;
     transition: transform 1s;
     margin-top: 1rem;
@@ -210,7 +215,6 @@ header .logo {
     margin-top: 1rem; /* Espaçamento entre o conteúdo do card e o botão */
 }
 
-/*sobre*/
 .sobre {
     display: flex;
     justify-content: flex-start;
@@ -263,13 +267,15 @@ header .logo {
     margin: 1rem 0;
     font-size: 1.5rem;
 }
-/*linha*/
+
+
+
 .linha{ 
     background: #7D693C;
     width: 100%;
     height: 40px;
 }
-/*Avaliação*/
+
 
 .avaliacao{
     display: flex;
@@ -277,7 +283,6 @@ header .logo {
     justify-content: center;
     align-items: center;
     color: #4e2208;
-
 }
 .avaliacao h1{
     font-size: 3rem;
@@ -285,12 +290,10 @@ header .logo {
 }
 
 .avaliacao img {
-    
     height: 300px;
 }
 .avaliacao h2,.avaliacao h4{
     width: 25rem;
-    
 }
 
 .avaliacao h2{
@@ -300,8 +303,10 @@ header .logo {
 
 .conteiner-avaliacao{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    width: 100%;
 }
 .conteiner-avaliacao section {
     display: flex;
@@ -310,8 +315,23 @@ header .logo {
     align-items: center;
     text-align: center;
     padding: 2rem;
+
+    width: 400px;
+    height: auto;
 }
-/*Contato*/    
+
+.conteiner-avaliacao h2{
+    width: 100%;
+    color: black;
+}
+
+.conteiner-avaliacao h4{
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+  
 .contatos{ 
     display: flex;
     justify-content: center;
@@ -337,7 +357,6 @@ header .logo {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50rem;
     text-align: center;
     height: 15rem;
     color: #4e2208;
@@ -361,64 +380,247 @@ header .logo {
     font-size: 1.5rem;
 
 }
-/*footer*/
 
-footer{
+.formulario-contato {
     display: flex;
-    justify-content: center;
-    align-items: center ;
     flex-direction: column;
-    background: #DFBA69;
-    height: 20rem;
+    align-items: center;
+    margin-top: 2rem;
+    color: #4e2208;
 }
-footer section {
+
+.formulario {
     display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    width: 70rem;
-}
-footer section nav{
-    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
-footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formulario label {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-footer li {
-    list-style-type: none;
+.formulario-contato input{
+    width: 25%;
+    height: 2rem;
+
 }
 
-footer a {
-    margin: 0.5rem;
-    text-decoration: none;
+.formulario-contato h3 {
+    margin-bottom: 1rem; /* Ajuste o valor conforme necessário */
+}
+
+.campo-nome,
+.campo-telefone {
+    padding: 0.5rem;
+    border: 1px solid #B26C44;
+    border-radius: 5px;
     font-size: 1rem;
-    align-items: center;
-    display: flex;
-    color: #fff;
 }
 
-footer a:hover {
+.botao-enviar {
+    background-color: #4e2208;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #B26C44;
+}
+
+
+.rodape {
+    justify-content: space-between;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    background: #DFBA69;
+    padding: 10px 20px; /* Adiciona um espaçamento interno geral */
+
+}
+
+.logo-rodape img {
+    width: 150px;
+    margin-left: 20px; /* Move a logo um pouco para a direita */
+}
+
+.nav-rodape ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-rodape ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+
+.nav-rodape a:hover{
     color: #423c3c;
 }
 
-
-footer button:hover {
-    background: #4e2208;
-}
-footer img{ 
-    width: 8rem;
-    height: 8rem;
-    cursor: pointer;
-    margin-right: 30rem;
+.rede-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px; /* Move as redes sociais um pouco para a esquerda */
 }
 
-footer p {
-    color: #fff;
-    font-size: 1rem;
+.direitos{
+    background: #DFBA69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+@media (max-width: 768px) {
+    /* Header */
+    header, nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    header ul {
+        gap: 10px;
+        margin-left: 0rem;
+    }
+
+    /* Conteúdo de introdução */
+    .conteudo h1 {
+        font-size: 3rem;
+    }
+
+    .conteudo h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Cardápio */
+    .conteiner-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Seção Sobre */
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .sobre h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .sobre p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* Avaliações */
+    .conteiner-avaliacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-avaliacao section {
+        width: 100%;
+    }
+
+    /* Contato */
+    .contatos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contatos img {
+        max-width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Rodapé */
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape .rede-social {
+        margin: 1rem 0;
+    }
+
+    .rodape .direitos h1 {
+        font-size: 0.8rem;
+        padding: 1rem 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header,nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        
+    }
+    nav li a{
+        font-size: 0.8rem;
+    }
+
+    .conteudo article h1 {
+        font-size: 1rem;
+    }
+
+    .conteudo article h4 {
+        font-size: 0.5rem;
+    }
+
+    .conteiner-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contatos h3,.contatos h4{
+        font-size: 1rem;
+    }
+
+    .contatos img {
+        width: 8rem;
+    }
+
+    
+}
+
+
+
+
+
 
